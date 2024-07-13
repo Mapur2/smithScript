@@ -1,0 +1,66 @@
+.react-codemirror2 > .CodeMirror:first-child {
+  display: none;
+}
+
+body{
+  margin: 0;
+}
+
+.top-pane{
+  background-color: rgb(4, 58, 112);
+}
+
+.pane{
+  height: 50vh;
+  display: flex;
+}
+.cross:hover{
+  cursor: crosshair;
+}
+.editor-container{
+  flex-grow: 1;
+  flex-basis: 1;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+    max-width: 40vmax;
+  overflow: scroll;
+}
+.navbar{
+  background-image: linear-gradient(135deg,black,white);
+  border: 0px 0px 15px gray;
+}
+.editor-title{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(144, 144, 225);
+  border-top-left-radius: .5rem;
+  border-top-right-radius: 0.5rem;
+  font-size:1.5vmax;
+  padding: 2px;
+}
+
+.code-wrapper{
+  flex-grow: 1;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.CodeMirror {
+  height: 100% !important;
+}
+
+.collapse{
+  flex-grow: 0;
+}
+
+.collapse .CodeMirror-scroll{
+  position: absolute;
+}
+
+.modal-body{
+  height: 80vh;
+}
+.modal, .modal-content , .modal-dialog{
+  width: 100vmax; 
+}
